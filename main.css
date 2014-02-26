@@ -1,3 +1,34 @@
 @charset "UTF-8";
 /* CSS Document */
 
+.background{
+	height:100%;
+	width: 100%;
+	min-height:700px;
+	position:fixed;
+}
+
+.container{
+	position:relative;
+	min-width: 586px;
+	min-height: 400px;
+	background-color:#FFC;
+	margin-right: 50px;
+	margin-top: 50px;
+	float:right;
+}
+
+#question{
+	margin: 40px;
+}
+
+#answers {
+	margin: 55px;
+}
+
+#next {
+	margin-left: 60px;
+}
+
+
+	
