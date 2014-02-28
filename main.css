@@ -2,7 +2,8 @@
 /* CSS Document */
 
 .background{
-	background:url(Skyline-Los-Angeles-Night.jpg);
+	background:url(Skyline-Los-Angeles-Night.jpg) no-repeat;
+	background-size:cover;
 	height:100%;
 	width: 100%;
 	min-height:700px;
@@ -10,35 +11,37 @@
 }
 
 .title{
-	position:fixed;
+	position: relative;
 	float:left;
-	font-family:Verdana, Geneva, sans-serif;
-	font-size:50px;
-	margin-top:80px;
-	margin-left:80px;
+	font-size:40px;
+	margin-top:90px;
+	margin-left:100px;
+	min-height:100px;
+	min-width:200px;
 	text-align:center;
 	color:rgba(204,204,204,1);
-	font-style: oblique;
+	font-family:MontereyMediumFLF;
+	text-align:justify;
+	opacity:0.6;
 }
 
 div h2{
-	font-size:36px;
-	padding:10px;
+	font-style:italic;
 }
 
 .container{
 	position:relative;
-	min-width: 586px;
-	min-height: 400px;
+	width: 586px;
+	height: 400px;
 	font-family:Verdana, Geneva, sans-serif;
 	font-size:18px;
-	color:rgba(51,51,51,1);
-	background-color:rgba(204,153,0,1);
-	opacity:0.8;
+	color:rgba(102,102,102,1);
+	background-color:rgba(255,255,255,1);
+	opacity:0.6;
 	border-radius:8px;
-	margin-right: 50px;
-	margin-top: 50px;
 	float:right;
+	margin-right:80px;
+	margin-top:80px;
 }
 
 #question{
@@ -47,12 +50,23 @@ div h2{
 }
 
 #answers {
-	margin: 40px;
+	display:inline-block;
+	margin-left: 40px;
 	text-align:justify;
+}
+
+.radio{
+}
+
+#result{
+	display: inline-block;
+	margin-left:60px;
+	font-weight:bold;	
 }
 
 #next {
 	float:right;
+	display: inline-block;
 	margin-right: 60px;
 	width:55px;
 	height:25px;
@@ -62,11 +76,11 @@ div h2{
 	cursor:pointer;
 	background:rgba(49,49,49,1);
 	color:rgba(201,201,201,1);
-	font-family:Verdana, Geneva, sans-serif;
 	font-size:16px;
 	opacity: 0.9;
 	
 }
+
 
 
 	
