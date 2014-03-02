@@ -84,6 +84,7 @@ function enter(){
 
 $('#next').click(function(e) {
 	if (questionIndex<9){
+		$('#next').empty();
 		$('#result').empty();
 		$('#question').empty();
 		$('#answers').empty();
