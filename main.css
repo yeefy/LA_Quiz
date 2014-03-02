@@ -11,18 +11,19 @@
 }
 
 .title{
-	position: relative;
+	position:fixed;
+	display:inline-block;
 	float:left;
 	font-size:40px;
-	margin-top:90px;
+	margin-top:150px;
 	margin-left:100px;
 	min-height:100px;
 	min-width:200px;
 	text-align:center;
 	color:rgba(204,204,204,1);
-	font-family:MontereyMediumFLF;
+	font-family:"Champagne & Limousines";
 	text-align:justify;
-	opacity:0.6;
+	opacity:0.9;
 }
 
 div h2{
@@ -31,42 +32,77 @@ div h2{
 
 .container{
 	position:relative;
-	width: 586px;
-	height: 400px;
-	font-family:Verdana, Geneva, sans-serif;
+	display:inline-block;
+	min-width: 650px;
+	min-height: 400px;
+	font-family:Tahoma, Geneva, sans-serif;
 	font-size:18px;
 	color:rgba(102,102,102,1);
 	background-color:rgba(255,255,255,1);
-	opacity:0.6;
 	border-radius:8px;
 	float:right;
 	margin-right:80px;
 	margin-top:80px;
+	opacity:0.6;
 }
 
 #question{
-	margin: 40px;
+	margin-top: 40px;
 	text-align:center;
 }
 
-#answers {
+.tracking{
+	position:relative;
+	width:150px;
+	margin-left:80px;
+	margin-top:40px;
+}
+
+#questionNumber{
+}
+
+#questionNumber p{
+	display: inline-block;
+}
+
+#score{
 	display:inline-block;
-	margin-left: 40px;
+}
+
+#score p{
+	display:inline-block;
+}
+
+#answers {
+	float:right;
+	position:relative;
+	margin-top:40px;
 	text-align:justify;
+	width:350px;
 }
 
 .radio{
 }
 
 #result{
-	display: inline-block;
-	margin-left:60px;
+	clear:both;
 	font-weight:bold;	
+	text-align:center;
+	margin:50px;
+	font-size:50px;
+}
+
+h3{
+	color:rgba(0,153,51,1);
+}
+
+h4{
+	color:rgba(255,0,0,1);
 }
 
 #next {
-	float:right;
-	display: inline-block;
+	clear: both;
+	float: right;
 	margin-right: 60px;
 	width:55px;
 	height:25px;
