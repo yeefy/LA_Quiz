@@ -23,16 +23,15 @@
 	questions [4] = new questionObject ("Which museum in L.A. is known for its lamp posts?", ["MOCA", "LACMA", "Norton Simon", "Bowers"], 1);
 	questions [5] = new questionObject ("The Rose Parade takes place in which L.A. suburb?", ["Santa Monica", "Beverly Hills", "Pasadena", "Hollywood"], 2);
 	questions [6] = new questionObject ("Which movie takes place in L.A?", ["The Departed", "The Bourne Legacy", "Crash", "Love Actually"], 2);
-	questions [7] = new questionObject ("Which is no longer an ethnic neighborhood in L.A.", ["Little Ethiopia","Thai Town", "Little Tokyo", "Little Italy"], 3);
-	questions [8] = new questionObject ("The Hollywood Bowl is an amphitheater for what kind of events?", ["sport","music", "film", "eating"], 1);
+	questions [7] = new questionObject ("Which is no longer an ethnic neighborhood in L.A.?", ["Little Ethiopia","Thai Town", "Little Tokyo", "Little Italy"], 3);
+	questions [8] = new questionObject ("The Hollywood Bowl is an amphitheater for which kind of event?", ["sport","music", "film", "eating"], 1);
 	questions [9] = new questionObject ("Which term is used to refer to people from L.A.?", ["Angelenos", "L.A.-ers", "Lakers", "Angelos"], 0);
 	
 $(document).ready(function(e) {
 		
-	console.log(score);
 	generateQuestions();
 	generateAnswers();
-	$('#questionNumber').append(' '+'<p>'+ questionNumber +'</p>');
+	$('#questionNumber').append(' '+'<p>'+ questionNumber +' of 10</p>');
 	$('#score').append(' '+'<p>'+ score +'</p>');
 	enter();
 
@@ -46,21 +45,21 @@ function generateQuestions (){
 function generateAnswers () {
 	var answerList = questions[questionIndex].answers;
 	for (var i = 0; i<answerList.length; i++){
-		$('#answers').append("<li><input type='radio' class='radio' name='answers' value="+ i +">" + answerList[i] +"</li>")
+		$('#answers').append('<li><input type="radio" name="answers" class="radio" value="+ i +">' + answerList[i] +'</li>');
 	}
-	$('#next').append('<p>Next</p>').hide().fadeIn('slow');
+	$('#next').append('<p>Next</p>');
 }
 	
 function numberCorrect(){
 	$('#score p').remove();
 	score++;
-	$('#score').append(' '+'<p>'+ score + '/10</p>');
+	$('#score').append(' '+'<p>' + score + '</p>');
 }
 
 function questionOrder(){
 	$('#questionNumber p').remove();
 	questionNumber++;
-	$('#questionNumber').append(' '+'<p>' + questionNumber + '</p>');
+	$('#questionNumber').append(' '+'<p>' + questionNumber + ' of 10</p>');
 }
 
 function evaluation(){
@@ -76,7 +75,7 @@ function evaluation(){
 
 function enter(){
 	$('.radio').click(function(e) {
-        if ($("input[type=radio]").is(':checked')){
+        if ($('input[type=radio]').is(':checked')){
 			evaluation();
 		}
     })
@@ -101,6 +100,7 @@ $('#next').click(function(e) {
 		$('#question').remove();
 		$('#answers').remove();
 		$('#result').remove();
+		$('.container').append('<p>You scored' + " " + score +  '/10</p>');
 	}
 	})
 

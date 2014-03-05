@@ -21,7 +21,7 @@
 	min-width:200px;
 	text-align:center;
 	color:rgba(204,204,204,1);
-	font-family:"Champagne & Limousines";
+	font-family:Georgia, "Times New Roman", Times, serif;
 	text-align:justify;
 	opacity:0.9;
 }
@@ -46,6 +46,8 @@ div h2{
 	opacity:0.6;
 }
 
+
+
 #question{
 	margin-top: 40px;
 	text-align:center;
@@ -53,7 +55,6 @@ div h2{
 
 .tracking{
 	position:relative;
-	width:150px;
 	margin-left:80px;
 	margin-top:40px;
 }
@@ -116,6 +117,8 @@ h4{
 	opacity: 0.9;
 	
 }
+
+
 
 
 
