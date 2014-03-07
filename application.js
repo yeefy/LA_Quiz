@@ -45,7 +45,7 @@ function generateQuestions (){
 function generateAnswers () {
 	var answerList = questions[questionIndex].answers;
 	for (var i = 0; i<answerList.length; i++){
-		$('#answers').append('<li><input type="radio" name="answers" class="radio" value="+ i +">' + answerList[i] +'</li>');
+		$('#answers').append('<li><input type="radio" name="answers" class="radio" value='+ i +'>' + answerList[i] +'</li>');
 	}
 	$('#next').append('<p>Next</p>');
 }
@@ -65,6 +65,8 @@ function questionOrder(){
 function evaluation(){
 	var selected = $('input[name=answers]:checked').val();
 	var correct = questions[questionIndex].correct;
+	console.log(selected);
+	console.log(correct);
 	if(selected==correct){
 		$('#result').append('<h3>'+"Correct"+'</h3>');
 		numberCorrect();
@@ -97,12 +99,16 @@ $('#next').click(function(e) {
 		$('#next').remove();
 		$('#score').remove();
 		$('#questionNumber').remove();
-		$('#question').remove();
+		$('#question').empty();
 		$('#answers').remove();
 		$('#result').remove();
-		$('.container').append('<p>You scored' + " " + score +  '/10</p>');
+		$('#question').append('<p>You scored' + " " + score +  '/10</p>');
 	}
 	})
+
+function playAgain(){
+	
+}
 
 
 })
