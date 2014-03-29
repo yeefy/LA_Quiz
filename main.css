@@ -10,20 +10,21 @@
 	position:fixed;
 }
 
+.content{
+	text-align:center;
+	margin: 10%;
+}
+
 .title{
-	position:fixed;
+	position:relative;
 	display:inline-block;
 	float:left;
 	font-size:40px;
-	margin-top:150px;
-	margin-left:100px;
 	min-height:100px;
 	min-width:200px;
-	text-align:center;
-	color:rgba(204,204,204,1);
+	color:rgba(255,255,255,1);
 	font-family: 'Josefin Sans', sans-serif;
 	text-align:justify;
-	opacity:0.9;
 }
 
 div h2{
@@ -33,31 +34,31 @@ div h2{
 .container{
 	position:relative;
 	display:inline-block;
-	min-width: 650px;
-	min-height: 400px;
+	min-width: 600px;
+	min-height: 350px;
 	font-family:Tahoma, Geneva, sans-serif;
 	font-size:18px;
 	color:rgba(102,102,102,1);
 	background-color:rgba(255,255,255,1);
 	border-radius:8px;
 	float:right;
-	margin-right:80px;
-	margin-top:80px;
 	opacity:0.6;
+	margin-top: -25px;
 }
 
 
 
 #question{
 	margin-top: 40px;
-	text-align:center;
 }
 
 .tracking{
-	width:180px;
+	width:150px;
 	position:relative;
-	margin-left:80px;
+	text-align:left;
+	margin-left:50px;
 	margin-top:40px;
+	font-size:14px;
 }
 
 #questionNumber{
@@ -68,7 +69,6 @@ div h2{
 }
 
 #score{
-	display:inline-block;
 }
 
 #score p{
@@ -110,7 +110,7 @@ h4{
 	height:25px;
 	border-radius:5px;
 	text-align:center;
-	padding-top:5px;
+	padding-top:8px;
 	cursor:pointer;
 	background:rgba(49,49,49,1);
 	color:rgba(201,201,201,1);

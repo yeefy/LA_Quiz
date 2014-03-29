@@ -79,6 +79,7 @@ function enter(){
 	$('.radio').click(function(e) {
         if ($('input[type=radio]').is(':checked')){
 			evaluation();
+			$('.radio').attr('disabled', true);
 		}
     })
 }
