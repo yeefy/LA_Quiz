@@ -39,11 +39,11 @@ div h2{
 	min-height: 350px;
 	font-family:Tahoma, Geneva, sans-serif;
 	font-size:18px;
-	color:rgba(49,49,49,1);
-	background-color:rgba(204,204,204,1);
+	color:rgba(255,255,255,1);
+	background-color:rgba(51,51,51,1);
 	border-radius:8px;
 	float:right;
-	opacity:0.4;
+	opacity:0.6;
 	margin-top: -25px;
 }
 
@@ -114,7 +114,7 @@ h4{
 	text-align:center;
 	padding-top:8px;
 	cursor:pointer;
-	background:rgba(49,49,49,1);
+	background:rgba(0,0,0,1);
 	color:rgba(201,201,201,1);
 	font-size:16px;
 	opacity: 0.9;
