@@ -104,12 +104,15 @@ $('#next').click(function(e) {
 		$('#answers').remove();
 		$('#result').remove();
 		$('#question').append('<p>You scored' + " " + score +  '/10</p>');
+		$('#replay').removeClass("replay");
 	}
 	})
 
-function playAgain(){
 	
-}
+$("#replay").click(function() {
+	location.reload();
+});
+	
 
 
 })
