@@ -36,7 +36,7 @@ div h2{
 	min-width: 600px;
 	min-height: 350px;
 	font-family:Tahoma, Geneva, sans-serif;
-	font-size:20px;
+	font-size:18px;
 	color:rgba(51,51,51,1);
 	background-color:rgba(204,204,204,1);
 	border-radius:8px;
@@ -120,7 +120,7 @@ h4{
 }
 
 .replay{
-	opacity:0;
+	visibility:hidden;
 }
 
 #replay{
